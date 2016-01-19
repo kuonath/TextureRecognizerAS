@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/calibrationLayout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    > 
+
+    <ImageView 
+        android:id="@+id/image_bar1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="TODO"
+        android:src="@mipmap/screen1cut"
+    />
+    
+	<TextView
+	    android:id="@+id/textview_instructions_calib_1"
+        android:layout_marginTop="50dp"
+		android:layout_below ="@id/image_bar1"	    
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentLeft="true"
+		android:textSize="18dp"	    
+	    android:text="@string/calibration" 
+	/>
+
+	<TextView
+	    android:id="@+id/textview_offsetX"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/textview_instructions_calib_1"
+	    android:text="@string/textview_offsetX" 
+	/>
+
+	<TextView
+	    android:id="@+id/textview_offsetY"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/textview_offsetX"
+	    android:text="@string/textview_offsetY" 
+	/>
+
+	<TextView
+	    android:id="@+id/textview_offsetZ"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/textview_offsetY"
+	    android:text="@string/textview_offsetZ" 
+	/>
+	
+	<TextView
+	    android:id="@+id/textview_instructions_calib_2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentStart="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/textview_offsetZ"
+	    android:text="@string/empty"
+	/>
+	
+	<LinearLayout
+    	android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+	    android:layout_below="@id/textview_instructions_calib_2"
+    	android:gravity="center">
+
+		<ImageButton
+		    android:id="@+id/button_ok_calib"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:background="@android:color/transparent"
+		    android:cropToPadding="false"
+		    android:enabled="false"
+		    android:scaleType="fitXY"
+		    android:layout_margin="50dp"
+		    android:src="@drawable/start" />
+
+		<ImageButton
+	   		android:id="@+id/button_cancel_calib"
+	    	android:layout_width="60dp"
+	    	android:layout_height="60dp"
+        	android:cropToPadding="false"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/cancel"
+		    android:background="@android:color/transparent"        	
+        	android:layout_margin="50dp"
+	   		android:enabled="true"
+		/>
+		
+	</LinearLayout>
+
+</RelativeLayout>

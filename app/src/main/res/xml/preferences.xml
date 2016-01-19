@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/title_sensor_group"
+        android:key="pref_key_sensor_group">
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="@string/sensor_accel"
+        android:key="pref_key_accel_select" />
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="@string/sensor_grav"
+        android:key="pref_key_grav_select" />
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="@string/sensor_gyro"
+        android:key="pref_key_gyro_select" />
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="@string/sensor_magnet"
+        android:key="pref_key_magnet_select" />
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="@string/sensor_rotvec"
+        android:key="pref_key_rotvec_select" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_accel_group"
+        android:key="pref_key_accel_group">
+    	<CheckBoxPreference
+        	android:defaultValue="false"
+        	android:title="@string/title_extern_accel"
+        	android:key="pref_key_extern_accel" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_features_group"
+        android:key="pref_key_features_group">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="title_velocity"
+            android:key="pref_key_velocity" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/title_mode_group"
+        android:key="pref_key_mode_group">
+    	<CheckBoxPreference 
+        	android:defaultValue="false"
+        	android:title="@string/title_mode_select"
+        	android:key="pref_key_mode_select"/>
+    </PreferenceCategory>
+</PreferenceScreen>

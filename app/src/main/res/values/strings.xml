@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">TextureRecognizer</string>
+    
+    <!-- Dialog for sensor selection -->
+    <string name="sensor_accel">Acceleration Sensor (always active)</string>
+    <string name="sensor_extern_accel">Extern Acceleration Sensor (needs Bluetooth enabled)</string>
+    <string name="sensor_grav">Gravity Sensor</string>
+    <string name="sensor_gyro">Gyroscope</string>
+    <string name="sensor_magnet">Magnetic Field Sensor</string>
+    <string name="sensor_rotvec">Rotation Vector Sensor</string>
+    <string name="sensor_velocity">Use Velocity for Feature Computation</string>
+    <string name="accel_click">Acceleration sensor has to be activated</string>
+    
+    <!-- Preferences -->
+    <string name="select_sensors">Please select the sensors you want to use:</string>
+    <string name="title_sensor_group">Sensors</string>
+    <string name="title_accel_group">Acceleration Sensor</string>
+    <string name="title_features_group">Features</string>
+    <string name="title_mode_group">Recording mode</string>
+    <string name="database_on">Database</string>
+    <string name="database_off">Send</string>
+    <string name="title_sensor_select">Selected sensors</string>
+    <string name="title_extern_accel">Use extern acceleration sensor</string>
+    <string name="title_mode_select">Database mode</string>
+    <string name="active">active</string>
+    <string name="inactive">inactive</string>
+    <string name="not_available">not available</string>
+    <string name="used">used</string>
+    <string name="not_used">not used</string>
+    
+    <!-- Main Activity TextureRecognizerActivity -->
+    <string name="textview_instructions_start">Start the recording procedure by pressing the play button.</string>
+    <string name="button_new_texture">New Entry</string>
+    <string name="button_add_to_entry">Add to existing Texture</string>
+    
+    <!-- SensorCalibrationActivity -->
+    <string name="calibration">calibration</string>
+    <string name="textview_instructions_calib_1">Put your phone screen down on a flat surface to start the calibration and get the offset values.\n\nMinimum Delay for the accelerometer: %1$d ms \nMinimum Delay for the Gyroscope: %1$d ms\n</string>
+    <string name="textview_offsetX">Offset X: </string>
+    <string name="textview_offsetY">Offset Y: </string>
+    <string name="textview_offsetZ">Offset Z: </string>
+    <string name="empty">\n</string>
+    <string name="textview_instructions_calib_2">\nCalibration finished. Pick up your phone and press the OK Button to continue.\n</string>
+    <string name="button_ok">OK</string>
+    <string name="gapFiller_before">before</string>
+    <string name="gapFiller_after">after</string>
+    <string name="gapFiller_camera_1">the first</string>
+    <string name="gapFiller_camera_2">the second</string>
+    
+    <!-- CameraActivity -->
+    <string name="taking">taking </string>
+    <string name="picture">picture?</string>
+    <string name="textview_instructions_camera_1">Take two pictures by clicking on the camera button only once!</string>
+    <string name="textview_instructions_camera_2">Pictures taken. Please click OK to proceed with the audio and sensor recordings.</string>
+    <string name="message_open_failed">Could not open Camera. Please restart the App.</string>
+    <string name="message_picture_taken_1">First picture taken!</string>
+    <string name="message_picture_taken_2">Second picture taken! Please click OK to proceed with the audio and sensor recordings.</string>
+    
+    <!-- SensorLoggingActivity -->
+    <string name="logging">logging</string>
+    <string name="waiting">Waiting</string>
+    <string name="checkbox_sensors_logging">Log sensors</string>
+    <string name="checkbox_audio_logging">Record audio</string>
+    <string name="wait_vibration">Wait for the first vibration signal &#8230;</string>
+    <string name="no_box_checked">Please make sure at least one of checkboxes is checked before you start.</string>
+    <string name="warning_logging">WARNING! No sensors being logged! Please start again, but this time choose particular sensors from the preference list.</string>
+    <string name="status_logging">Currently logging! Click on the button to stop logging.</string>
+    <string name="textview_instructions_logging_1">To start the audio and sensor recordings press the Camera Button. Right after the first vibration signal, move the metal tip across the surface for 7s to record the
+sensor data and audio until there is another vibration.</string>
+	<string name="textview_instructions_logging_2"> </string>
+	<string name="textview_instructions_logging_3">Logging finished. Please press the OK Button to continue and finish data collection. You can now extract features from the recorded data and send them to the TPad.</string>
+	<string name="button_features">Extract Features</string>
+	
+	<!-- Logging -->
+	<string name="sensor_missing">Sensor(s) missing!</string>
+  
+    <!-- Cancel Dialog -->
+    <string name="message_dialog_cancel">Do you really want to cancel %1$s ? \nIf yes, do you want to keep the data you recorded so far or do you want it to be deleted?</string>
+    <string name="message_dialog_cancel_database">Do you really want to cancel %1$s ? The data you have recorded so far will be deleted.</string>
+    <string name="checkbox_keep_data_unfinished">keep recorded data (adds _unfinished to the respective folder name)</string>
+    <string name="checkbox_keep_data_not_analyzed">keep recorded data (adds _not_analyzed to the respective folder name)</string>
+    <string name="checkbox_delete_data">Delete recorded data</string>
+    
+    <!-- Continue Dialog  -->
+    <string name="next_camera">The next step will be for you to take two photos of the texture.</string>
+    <string name="next_logging">The next step will be the audio and sensor recordings."</string>
+    <string name="message_continue">Do you want to continue?</string>
+    
+    <!-- Feature Dialog -->
+	<string name="textview_features">Extracting features &#8230;</string>
+	
+	<!-- Send Dialog -->
+	<string name="message_dialog_send">Choose one of the following options:</string>
+	<string name="checkbox_mail">E-Mail (not currently supported)</string>
+	<string name="checkbox_bluetooth">Bluetooth</string>
+    
+    <!-- Bluetooth -->
+    <string name="no_bluetooth">No bluetooth adapter available</string>
+	<string name="toast_enabled_bt">Bluetooth enabled</string>
+    <string name="device_found">Bluetooth Device %1$s found</string>
+	<string name="toast_error_bt">Could not enable Bluetooth. Use intern Accelerometer instead.</string>
+    
+    <!-- general -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="close">Close App</string>
+    <string name="stop">Stop</string>
+	<string name="finish">Finish</string>
+	<string name="skip">Skip</string>
+	<string name="send">Send</string>
+	<string name="cancel">Cancel</string>
+    
+    <!-- Images -->
+    <string name="image_description_logo">Logo</string>
+
+</resources>

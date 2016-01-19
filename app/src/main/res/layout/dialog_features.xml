@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"> 
+
+    <ProgressBar 
+        android:id="@+id/progressbar_features"
+    	style="@android:style/Widget.ProgressBar.Large"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:indeterminateOnly="true"
+    />
+    
+    <TextView 
+    	android:id="@+id/textview_features"  
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:text="@string/textview_features" 
+    />
+    
+    <Button
+    	android:id="@+id/button_send_features"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:text="@string/send"
+    	android:visibility="gone"
+    />
+    
+</RelativeLayout>

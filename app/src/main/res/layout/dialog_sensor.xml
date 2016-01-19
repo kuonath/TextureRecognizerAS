@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <CheckBox
+        android:id="@+id/accel_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_accel"/>
+    
+    <CheckBox
+        android:id="@+id/extern_accel_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accel_box"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_extern_accel"/>
+    
+    <CheckBox
+        android:id="@+id/grav_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extern_accel_box"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_grav"/>
+    
+    <CheckBox
+        android:id="@+id/gyro_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grav_box"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_gyro"/>
+    
+    <CheckBox
+        android:id="@+id/magnet_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gyro_box"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_magnet"/>
+    
+    <CheckBox
+        android:id="@+id/rotvec_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/magnet_box"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_rotvec"/>
+
+    <CheckBox
+        android:id="@+id/velocity_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rotvec_box"
+        android:paddingTop="10dp"
+        android:paddingLeft="25dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:text="@string/sensor_velocity"/>
+
+</RelativeLayout>
