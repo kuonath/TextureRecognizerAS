@@ -25,12 +25,16 @@
         android:key="pref_key_rotvec_select" />
     </PreferenceCategory>
     <PreferenceCategory
-        android:title="@string/title_accel_group"
+        android:title="@string/title_extern_sensors_group"
         android:key="pref_key_accel_group">
     	<CheckBoxPreference
         	android:defaultValue="false"
         	android:title="@string/title_extern_accel"
         	android:key="pref_key_extern_accel" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="@string/title_fsr"
+            android:key="pref_key_fsr" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="@string/title_features_group"

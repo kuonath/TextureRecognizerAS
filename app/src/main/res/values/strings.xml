@@ -11,19 +11,21 @@
     <string name="sensor_gyro">Gyroscope</string>
     <string name="sensor_magnet">Magnetic Field Sensor</string>
     <string name="sensor_rotvec">Rotation Vector Sensor</string>
+    <string name="sensor_fsr">Force Sensing Resistor</string>
     <string name="sensor_velocity">Use Velocity for Feature Computation</string>
     <string name="accel_click">Acceleration sensor has to be activated</string>
     
     <!-- Preferences -->
     <string name="select_sensors">Please select the sensors you want to use:</string>
     <string name="title_sensor_group">Sensors</string>
-    <string name="title_accel_group">Acceleration Sensor</string>
+    <string name="title_extern_sensors_group">External Sensor</string>
     <string name="title_features_group">Features</string>
     <string name="title_mode_group">Recording mode</string>
     <string name="database_on">Database</string>
     <string name="database_off">Send</string>
     <string name="title_sensor_select">Selected sensors</string>
     <string name="title_extern_accel">Use extern acceleration sensor</string>
+    <string name="title_fsr">Use Force Sensing Resistor</string>
     <string name="title_mode_select">Database mode</string>
     <string name="active">active</string>
     <string name="inactive">inactive</string>
